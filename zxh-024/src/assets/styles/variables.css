@@ -1,0 +1,63 @@
+/**
+ * 大地色系 CSS 变量
+ * 适合户外使用的设计语言 - 大按钮、高对比度、暖色调
+ */
+:root {
+  /* 大地色系主色板 */
+  --color-soil-dark: #4E342E;       /* 深土色 - 主文字 */
+  --color-soil: #5D4037;            /* 土棕色 - 主色 */
+  --color-soil-light: #795548;      /* 浅土色 - 辅助色 */
+  --color-sand: #A1887F;            /* 沙色 */
+  --color-cream: #FFF8E1;           /* 奶油色 - 面包 */
+  --color-beige: #EFEBE9;           /* 米色 - 背景 */
+  --color-green-field: #689F38;     /* 田野绿 */
+  --color-green-light: #8BC34A;     /* 嫩绿 */
+  --color-green-dark: #33691E;      /* 深绿 */
+  --color-leaf: #AED581;            /* 叶绿色 */
+  --color-wheat: #FFE082;           /* 麦色 */
+  --color-rust: #BF360C;            /* 锈色 - 警告 */
+  --color-water: #4FC3F7;           /* 水蓝色 */
+
+  /* 语义色 */
+  --color-primary: var(--color-soil);
+  --color-primary-light: var(--color-soil-light);
+  --color-accent: var(--color-green-field);
+  --color-bg: var(--color-beige);
+  --color-surface: var(--color-cream);
+  --color-text: var(--color-soil-dark);
+  --color-text-light: #8D6E63;
+  --color-border: #D7CCC8;
+  --color-danger: var(--color-rust);
+  --color-success: var(--color-green-field);
+
+  /* 大按钮尺寸（适合户外操作） */
+  --btn-min-height: 56px;
+  --btn-font-size: 1.1rem;
+  --btn-border-radius: 16px;
+
+  /* 间距 */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* 圆角 */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+
+  /* 阴影 */
+  --shadow-sm: 0 1px 3px rgba(78, 52, 46, 0.12);
+  --shadow-md: 0 4px 12px rgba(78, 52, 46, 0.15);
+  --shadow-lg: 0 8px 24px rgba(78, 52, 46, 0.2);
+
+  /* 字号 */
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-md: 1rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-xxl: 2rem;
+}

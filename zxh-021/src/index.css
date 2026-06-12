@@ -1,0 +1,86 @@
+/* ===== 全局样式 — 冰箱贴纸风格 ===== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f5f0e8;
+  --fridge-white: #fafafa;
+  --text-primary: #37474f;
+  --text-secondary: #607d8b;
+  --accent-green: #66bb6a;
+  --accent-orange: #ff7043;
+  --accent-blue: #42a5f5;
+
+  font-family: 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background: var(--bg);
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(255, 205, 210, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(200, 230, 201, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 50% 80%, rgba(187, 222, 251, 0.12) 0%, transparent 50%);
+  background-attachment: fixed;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cfd8dc;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b0bec5;
+}
+
+/* 选中文字颜色 */
+::selection {
+  background: #c8e6c9;
+  color: #2e7d32;
+}
+
+/* 链接 */
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 按钮通用 */
+button {
+  font-family: inherit;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}

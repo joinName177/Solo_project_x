@@ -1,0 +1,12 @@
+.export-button {
+  text-align: center;
+}
+
+.export-button__count {
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  padding: 0.1rem 0.45rem;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+}

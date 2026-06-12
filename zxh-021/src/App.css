@@ -1,0 +1,85 @@
+/* ===== App Layout ===== */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px 40px;
+  font-family: 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', system-ui, sans-serif;
+}
+
+.app-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.app-sidebar {
+  flex: 0 0 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: sticky;
+  top: 20px;
+}
+
+.app-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 救命模式包裹 */
+.emergency-wrap {
+  margin-top: 4px;
+}
+
+/* 侧边栏操作按钮 */
+.sidebar-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.action-btn {
+  width: 100%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 18px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.action-btn--add {
+  background: linear-gradient(135deg, #66bb6a, #43a047);
+  color: white;
+  box-shadow: 0 4px 12px rgba(67, 160, 71, 0.25);
+}
+
+.action-btn--add:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(67, 160, 71, 0.35);
+}
+
+.custom-count {
+  font-size: 13px;
+  color: #90a4ae;
+  font-weight: 500;
+}
+
+/* ===== 响应式 ===== */
+@media (max-width: 900px) {
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .app-sidebar {
+    flex: none;
+    width: 100%;
+    position: static;
+  }
+}

@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: linear-gradient(135deg, #e0f7fa 0%, #fff9c4 100%);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+}
+
+.header-icon {
+  font-size: 48px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.15));
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.header-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  color: #37474f;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.header-subtitle {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #607d8b;
+}

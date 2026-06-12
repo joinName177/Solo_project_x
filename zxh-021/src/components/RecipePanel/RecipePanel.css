@@ -1,0 +1,278 @@
+.recipe-panel {
+  background: #fafafa;
+  border: 3px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 20px;
+  min-height: 200px;
+}
+
+.recipe-panel-title {
+  margin: 0 0 16px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #37474f;
+}
+
+.recipe-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  color: #b0bec5;
+  text-align: center;
+}
+
+.recipe-empty-icon {
+  font-size: 64px;
+  margin-bottom: 12px;
+  animation: wiggle 3s infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+.recipe-empty p {
+  font-size: 16px;
+  color: #90a4ae;
+}
+
+/* 缺失食材统计 */
+.missing-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: #fff3e0;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.missing-stats-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #e65100;
+}
+
+.missing-item {
+  display: inline-block;
+  padding: 4px 12px;
+  background: white;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #bf360c;
+  border: 1px solid #ffcc80;
+}
+
+/* 菜谱卡片列表 */
+.recipe-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ---- RecipeCard ---- */
+.recipe-card {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 18px;
+  padding: 20px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.recipe-card:hover {
+  border-color: #90caf9;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.recipe-card--complete {
+  border-color: #a5d6a7;
+  background: linear-gradient(135deg, #fff 0%, #f1f8e9 100%);
+}
+
+.recipe-card-header {
+  margin-bottom: 12px;
+}
+
+.recipe-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.recipe-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #263238;
+}
+
+.custom-badge {
+  font-size: 14px;
+  margin-right: 2px;
+}
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge--ready {
+  background: #c8e6c9;
+  color: #2e7d32;
+}
+
+.badge--incomplete {
+  background: #ffe0b2;
+  color: #e65100;
+}
+
+.recipe-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: #78909c;
+}
+
+.recipe-ingredients-info {
+  margin-bottom: 10px;
+}
+
+.ingredient-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.tag--matched {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.tag--missing {
+  background: #fbe9e7;
+  color: #bf360c;
+}
+
+.tag--optional {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.recipe-tip {
+  margin: 8px 0;
+  padding: 8px 12px;
+  background: #fffde7;
+  border-radius: 10px;
+  font-size: 13px;
+  color: #827717;
+}
+
+.toggle-steps-btn {
+  padding: 8px 16px;
+  border: 2px dashed #b0bec5;
+  border-radius: 20px;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: #607d8b;
+  transition: all 0.2s;
+  margin-bottom: 8px;
+}
+
+.toggle-steps-btn:hover {
+  border-color: #42a5f5;
+  color: #1976d2;
+  background: #e3f2fd;
+}
+
+.recipe-steps {
+  margin: 8px 0 16px;
+  padding-left: 24px;
+}
+
+.step-item {
+  padding: 4px 0;
+  font-size: 14px;
+  color: #455a64;
+  line-height: 1.6;
+}
+
+/* 评分区 */
+.recipe-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+  flex-wrap: wrap;
+}
+
+.rating-label {
+  font-size: 13px;
+  color: #90a4ae;
+  font-weight: 500;
+}
+
+.rating-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.rating-btn {
+  padding: 5px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.rating-btn:hover {
+  border-color: #90caf9;
+  transform: scale(1.05);
+}
+
+.rating-btn--active {
+  border-color: #42a5f5;
+  background: #e3f2fd;
+  box-shadow: 0 2px 6px rgba(66, 165, 245, 0.25);
+}
+
+.delete-recipe-btn {
+  margin-top: 12px;
+  padding: 6px 14px;
+  border: 1px solid #ef9a9a;
+  border-radius: 20px;
+  background: white;
+  color: #c62828;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+
+.delete-recipe-btn:hover {
+  background: #ffebee;
+}

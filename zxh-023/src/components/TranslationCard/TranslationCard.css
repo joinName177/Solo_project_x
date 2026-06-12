@@ -1,0 +1,121 @@
+.translation-card {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.translation-card--loading,
+.translation-card--empty {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.translation-card--random {
+  border: 2px dashed var(--color-secondary);
+}
+
+.translation-card__badge {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  background: linear-gradient(135deg, var(--color-secondary), #ffa726);
+  color: white;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+}
+
+.translation-card__loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.translation-card__loader-icon {
+  font-size: 3rem;
+  animation: bounce-icon 0.6s ease infinite alternate;
+}
+
+@keyframes bounce-icon {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+.translation-card__spinner {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  border: 3px solid var(--color-primary-light);
+  border-top-color: var(--color-primary);
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.translation-card__placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  color: var(--color-text-light);
+}
+
+.translation-card__placeholder-icon {
+  font-size: 3rem;
+  opacity: 0.5;
+}
+
+.translation-card__meme {
+  margin: var(--space-sm) 0;
+}
+
+.translation-card__emoji {
+  font-size: 5rem;
+  display: inline-block;
+  animation: pop-in 0.4s var(--transition-bounce);
+}
+
+@keyframes pop-in {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.translation-card__meta {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  margin-bottom: var(--space-md);
+}
+
+.translation-card__tag {
+  background: var(--color-bg);
+  padding: 0.2rem 0.7rem;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+}
+
+.translation-card__text {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.7;
+  padding: var(--space-md);
+  margin: 0 0 var(--space-md);
+  background: linear-gradient(135deg, #fff5f8, #ffe8f0);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-primary);
+  font-style: normal;
+}
+
+.translation-card__actions {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+}

@@ -1,0 +1,33 @@
+.fridge-plan {
+  text-align: center;
+  padding: 16px 0;
+}
+
+.plan-btn {
+  padding: 14px 32px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ff8a65, #ff7043);
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(255, 112, 67, 0.3);
+}
+
+.plan-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 112, 67, 0.4);
+}
+
+.plan-btn:active {
+  transform: translateY(0);
+}
+
+.plan-hint {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #90a4ae;
+}

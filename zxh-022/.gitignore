@@ -1,0 +1,73 @@
+# ============================================================
+# Node.js / Vite / Vue 项目 .gitignore
+# ============================================================
+
+# ---- 依赖 ----
+node_modules/
+.pnpm-store/
+
+# ---- 构建产物 ----
+dist/
+dist-ssr/
+*.local
+
+# ---- 编辑器 ----
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+# ---- 操作系统 ----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---- 环境变量 ----
+.env
+.env.local
+.env.*.local
+
+# ---- 日志 ----
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ---- 测试 ----
+coverage/
+.nyc_output/
+*.lcov
+
+# ---- 缓存 ----
+.cache/
+*.tsbuildinfo
+.vite/
+.vite-inspect/
+
+# ---- 临时文件 ----
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ---- 包管理器 lock 文件（按需保留） ----
+# yarn.lock
+# pnpm-lock.yaml
+# package-lock.json 保留（确保依赖一致性）
+
+# ---- 其它 ----
+*.tgz
+*.tar.gz

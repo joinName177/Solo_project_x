@@ -1,0 +1,28 @@
+.pet-gallery {
+  margin-top: var(--space-sm);
+}
+
+.pet-gallery__title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.pet-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-lg);
+}
+
+.pet-gallery__empty {
+  text-align: center;
+  padding: var(--space-2xl);
+  color: var(--color-text-light);
+}
+.pet-gallery__empty span {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: var(--space-md);
+  opacity: 0.5;
+}

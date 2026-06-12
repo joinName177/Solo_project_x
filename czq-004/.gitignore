@@ -1,0 +1,58 @@
+# ============================================================
+# 村口零工板 — Git 忽略规则
+# ============================================================
+
+# ---- 依赖 ----
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+# ---- 构建产物 ----
+dist/
+.vite/
+build/
+
+# ---- IDE & 编辑器 ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
+
+# ---- 操作系统 ----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---- 环境变量 ----
+.env
+.env.local
+.env.*.local
+
+# ---- 日志 ----
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---- 测试 ----
+coverage/
+.nyc_output/
+
+# ---- 临时文件 ----
+*.tmp
+*.temp
+.cache/
+
+# ---- 调试 ----
+# （localStorage 数据在浏览器中，无需忽略）

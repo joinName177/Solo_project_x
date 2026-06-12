@@ -1,0 +1,62 @@
+/* ===================================
+   全局样式 — 村委会公告栏主题
+   大字体、暖色调、简单易用
+   =================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  background: #fdf5e6;
+  color: #333;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 全局大字体适配 */
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+/* 聚焦样式 */
+:focus-visible {
+  outline: 3px solid #d4a574;
+  outline-offset: 2px;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdf5e6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4a574;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b4513;
+}
+
+/* 选中文本 */
+::selection {
+  background: #d4a574;
+  color: #fff;
+}

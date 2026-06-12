@@ -1,0 +1,97 @@
+/* ============================================================
+   村口零工板 — 全局样式
+   设计理念：模拟村口公告板的温暖、质朴、亲切感
+   色调：木纹棕 + 米白纸色 + 暖橙点缀
+   ============================================================ */
+
+/* ---- CSS 变量（设计令牌） ---- */
+:root {
+  --color-wood-dark: #5d4037;
+  --color-wood: #6d4c41;
+  --color-wood-medium: #8d6e63;
+  --color-wood-light: #bcaaa4;
+
+  --color-paper: #fffef7;
+  --color-paper-dark: #faf7f0;
+  --color-cream: #fff8e1;
+
+  --color-text-primary: #3e2723;
+  --color-text-secondary: #5d4037;
+  --color-text-muted: #a1887f;
+
+  --color-accent: #e65100;
+  --color-success: #2e7d32;
+  --color-danger: #c62828;
+
+  --color-border: #e8dcc8;
+  --color-border-light: #efebe9;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+
+  --font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+}
+
+/* ---- Reset & Base ---- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  color: var(--color-text-secondary);
+  background:
+    /* 模拟粗糙墙面纹理 */
+    linear-gradient(180deg, #f5f0e8 0%, #ede4d3 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* 全局滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-wood-light);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-wood-medium);
+}
+
+/* 选中文字颜色 */
+::selection {
+  background: #ffcc80;
+  color: var(--color-text-primary);
+}
+
+/* ---- 打印样式（用于联系卡片截图） ---- */
+@media print {
+  body {
+    background: white;
+  }
+}
+
+/* ---- 响应式 ---- */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 12px 10px 30px;
+  }
+}

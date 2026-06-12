@@ -1,0 +1,110 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+dist/
+build/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Cache
+.cache/
+.temp/
+tmp/
+temp/
+*.tmp
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Misc
+*.bak
+*.orig
+*.pid
+*.seed
+*.pid.lock
+
+# Package manager lockfiles (keep only one)
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+# Vite
+.vite/
+vite.config.*.timestamp-*
+
+# Local development overrides
+*.local
+local.*
+
+# Archive / compressed
+*.7z
+*.rar
+*.zip
+*.tar
+*.gz
+*.xz
+
+# Large binary / media (unless needed)
+*.mp4
+*.mov
+*.avi
+*.wmv
+*.flv
+*.webm
+
+# Generated documentation
+docs/_build/
+site/
+
+# Deploy
+.netlify/
+.vercel/
+.firebase/
+
+# Kubernetes / Docker
+docker-compose.override.yml
+.kube/
+
+# Sensitive patterns
+*secret*
+*credential*
+*private_key*
+*.pem
+*.key
+!*.sample

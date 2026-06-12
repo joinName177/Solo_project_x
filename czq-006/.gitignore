@@ -1,0 +1,78 @@
+# ============================================
+# 乡村图书漂流角 — .gitignore
+# ============================================
+
+# --- 依赖 ---
+node_modules/
+.pnp
+.pnp.js
+
+# --- 构建产物 ---
+dist/
+dist-ssr/
+*.local
+
+# --- 编辑器 ---
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# --- 操作系统 ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- 环境变量 ---
+.env
+.env.local
+.env.*.local
+
+# --- 日志 ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- 测试 ---
+coverage/
+.nyc_output/
+*.lcov
+
+# --- 缓存 ---
+.cache/
+*.tsbuildinfo
+.vite/
+vitest.config.*.timestamp*
+__screenshots__/
+
+# --- 临时文件 ---
+tmp/
+temp/
+*.tmp
+*.temp
+
+# --- 包管理器 lock 文件（按需保留或忽略） ---
+# 建议保留 package-lock.json 以确保一致性
+# yarn.lock
+# pnpm-lock.yaml
+
+# --- 调试 ---
+.ls-lint.yml
+
+# --- Claude / AI 工具 ---
+.claude/
+CLAUDE.md
